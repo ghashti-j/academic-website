@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teaching — Jesse Ghashti</title>
+  <title>Biography — Jesse Ghashti</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+
+  <!-- ===== NAVBAR ===== -->
   <header class="navbar">
     <div class="site-tagline">In progress, always.</div>
     <button class="hamburger" onclick="document.querySelector('.navbar nav').classList.toggle('open')" aria-label="Toggle menu">
@@ -18,21 +20,131 @@
     <nav>
       <a href="../index.html">Home</a>
       <a href="biography.html" class="active">Biography</a>
-      <a href="research.html" >Research</a>
-      <a href="publications.html" >Publications</a>
-      <a href="teaching.html" >Teaching</a>
-      <a href="blog.html" >Current Work Blogs</a>
-      <a href="contact.html" >Contact</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="blog.html">Current Work Blogs</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
+
+  <!-- ===== PAGE BODY ===== -->
   <main class="page-body">
-    <div class="page-container">
-      <h1>Biography</h1>
-      <p class="under-construction">This page is under construction. Check back soon.</p>
+    <div class="home-layout">
+
+      <!-- LEFT SIDEBAR — Zara photo -->
+      <aside class="sidebar">
+        <div class="portrait-wrapper">
+          <img src="../images/zara.png" alt="Zara the Doberman">
+        </div>
+        <p style="text-align: center; font-style: italic; color: var(--text-muted); font-size: 0.88rem; margin-top: 12px;">
+          Zara, age 3 — my most loyal research companion.
+        </p>
+      </aside>
+
+      <!-- RIGHT CONTENT — Biography -->
+      <section class="bio-content">
+
+        <h2>Biography</h2>
+
+        <!-- EARLY YEARS & ARRIVING AT UBC -->
+        <h3>Finding Mathematics</h3>
+        <p>
+          I came to mathematics later than most. In 2018, at the age of 25, I moved to Kelowna,
+          British Columbia, a small city nestled in the Okanagan Valley, and enrolled at
+          The University of British Columbia (UBC) to pursue an undergraduate degree in
+          Mathematics. Starting university later in life brought its own challenges, but it
+          also meant I arrived with a clarity of purpose that has shaped everything since.
+        </p>
+
+        <!-- MASTERS -->
+        <h3>Master's Research</h3>
+        <p>
+          After completing my undergraduate degree, I purchased a home in Kelowna and decided
+          to continue at UBC for my Master's degree. It was during this time that I began
+          working with
+          <a href="https://cmps.ok.ubc.ca/about/contact/john-r-j-thompson/" target="_blank" rel="noopener">Dr. John R.J. Thompson</a>,
+          a collaboration that would come to define my research trajectory. My Master's research
+          focused on distance metric learning for mixed-type data in distance-based clustering.
+          I developed methods that incorporated nonparametric kernel density estimation
+          to learn distances across heterogeneous data types (continuous, nominal,
+          and ordinal data). These distances were designed for the purpose of clustering algorithms 
+          to operate more naturally on the kinds of messy, real-world datasets that rarely conform to 
+          a single data type. I received my Master's degree in Mathematics in 2024.
+        </p>
+
+        <!-- PhD -->
+        <h3>Doctoral Research</h3>
+        <p>
+          Toward the end of my Master's, Dr. Thompson and I discussed the directions I wanted
+          to take my doctoral work. He saw merit in the ideas I proposed and encouraged
+          me to continue under his supervision. I am now in my second year of my PhD, where
+          my research spans two interrelated areas.
+        </p>
+        <p>
+          The first area of research focusses on variable weighting techniques for 
+          heterogeneous variables. The goal is to quantify similarities and dissimilarities 
+          appropriately for distance-based soft clustering algorithms - methods that 
+          assign probabilistic, rather than hard, memberships to clusters. 
+          This work extends the mixed-type framework I developed during my Master's.
+        </p>
+        <p>
+          The second, and primary focus of my PhD, is fairness-aware clustering. Traditional
+          clustering methods are agnostic to the social context of the data they process.
+          When historical biases are embedded in the data, these methods can encode
+          and perpetuate structural disparities affecting marginalized populations. My work
+          draws on perspectives from social theory, philosophy, and sociology to develop
+          clustering techniques that explicitly account for these biases, correcting for them
+          through distributional constraints grounded in statistical theory. The goal is
+          to produce clusters that are not only statistically coherent but also equitable,
+          ensuring that neither groups nor individuals are systematically disadvantaged by
+          algorithmic decisions.
+        </p>
+        <p>
+          In 2025, entering my second year,
+          <a href="https://cmps.ok.ubc.ca/about/contact/warren-hare/" target="_blank" rel="noopener">Dr. Warren Hare</a>
+          joined as a co-supervisor. His expertise in optimization has been an invaluable
+          addition, particularly as my fairness-aware methods rely on
+          optimization-based formulations for distributional correction.
+        </p>
+
+        <!-- COLLABORATIONS & TRAVEL -->
+        <h3>Collaborations &amp; Conferences</h3>
+        <p>
+          In May 2026, I travelled to Hamilton, Ontario to work under the guidance of
+          <a href="https://ms.mcmaster.ca/~paul/" target="_blank" rel="noopener">Dr. Paul McNicholas</a>,
+          a renowned researcher in mixture models and clustering methodology at McMaster
+          University.
+        </p>
+        <p>
+          Throughout my Master's and PhD, I have had the privilege of presenting and discussing
+          my work at leading statistics conferences internationally, including meetings in
+          New York (NY, USA), Vancouver (BC, Canada), St. John's (NL, Canada), London (United
+          Kingdom), and Sevilla (Spain). My 2026 conference schedule includes presentations in
+          Hamilton (ON, Canada) and Milan (Italy).
+        </p>
+
+        <!-- PERSONAL -->
+        <h3>Beyond the Research</h3>
+        <p>
+          Outside of academia, I try to stay active through hiking, running, and a general
+          commitment to healthy living (the Okanagan makes that easy). I have a profound love of
+          travelling and exploring new places.
+          Languages are a particular passion of mine. I am currently taking Spanish lessons
+          with the goal of sitting the DELE examination, and I hope to eventually learn Czech,
+          German, Russian, Italian, Portuguese, and Greek, among others. Most of my time at
+          home, though, is spent with my Doberman, Zara (three years old and entirely convinced
+          she runs the household), and my amazing partner of nearly nine years.
+        </p>
+
+      </section>
+
     </div>
   </main>
+
   <footer class="site-footer">
-    &copy; 2026 Jesse Ghashti. 
+    &copy; 2026 Jesse Ghashti. Built with patience and too much coffee.
   </footer>
+
 </body>
 </html>
