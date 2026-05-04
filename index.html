@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesse Ghashti — Mathematics PhD, UBC Okanagan</title>
+  <meta name="description" content="Academic website of Jesse Ghashti, PhD student in Mathematics at UBC Okanagan. Research in fairness-aware machine learning, fuzzy spectral clustering, and optimal transport.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="site-tagline">In progress, always.</div>
+    <button class="hamburger" onclick="document.querySelector('.navbar nav').classList.toggle('open')" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/biography.html">Biography</a>
+      <a href="pages/research.html">Research</a>
+      <a href="pages/publications.html">Publications</a>
+      <a href="pages/teaching.html">Teaching</a>
+      <a href="pages/blog.html">Current Work Blogs</a>
+      <a href="pages/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE BODY ===== -->
+  <main class="page-body">
+    <div class="home-layout">
+
+      <!-- LEFT SIDEBAR -->
+      <aside class="sidebar">
+        <div class="portrait-wrapper">
+          <!-- Replace with your headshot -->
+          <img src="images/portrait.png" alt="Jesse Ghashti">
+        </div>
+
+        <div class="sidebar-links">
+          <a class="sidebar-link" href="https://www.google.com/maps/place/Kelowna" target="_blank" rel="noopener">
+            <img src="images/icon-location.png" alt=""> Kelowna, Canada
+          </a>
+          <a class="sidebar-link" href="https://ca.linkedin.com/in/jesse-ghashti" target="_blank" rel="noopener">
+            <img src="images/icon-linkedin.png" alt=""> LinkedIn
+          </a>
+          <a class="sidebar-link" href="https://scholar.google.com/citations?user=Z6CjP9QAAAAJ&hl=en" target="_blank" rel="noopener">
+            <img src="images/icon-scholar.png" alt=""> Google Scholar
+          </a>
+          <a class="sidebar-link" href="https://orcid.org/0009-0001-6645-1766" target="_blank" rel="noopener">
+            <img src="images/icon-orcid.png" alt=""> ORCID
+          </a>
+          <a class="sidebar-link" href="https://github.com/ghashti-j" target="_blank" rel="noopener">
+            <img src="images/icon-github.png" alt=""> GitHub
+          </a>
+        </div>
+      </aside>
+
+      <!-- RIGHT CONTENT -->
+      <section class="bio-content">
+        <div class="epigraph">
+          "The greatest value of a picture is when it forces us to notice what we never expected to see."
+          <span class="attribution">– John Tukey, 1977</span>
+        </div>
+
+        <h2>Snapshot Biography</h2>
+        <p>
+          I am a second year PhD student in Mathematics at The University of British
+          Columbia in the beautiful city of Kelowna, Canada. Throughout my PhD, I have
+          had the privilege of working alongside my supervisors Drs.
+          <a href="https://cmps.ok.ubc.ca/about/contact/john-r-j-thompson/" target="_blank" rel="noopener">John R.J. Thompson</a> and
+          <a href="https://cmps.ok.ubc.ca/about/contact/warren-hare/" target="_blank" rel="noopener">Warren Hare</a>.
+        </p>
+        <p>
+          My current research focuses on fairness in machine learning by drawing on
+          perspectives from social theory, philosophy, and sociology to examine how
+          clustering and classification methods can encode or perpetuate structural
+          inequities. I also work on kernel density estimation-based approaches to
+          automatic variable weighting for data clustering, with extensions to mixed
+          continuous, nominal, and ordinal data.
+        </p>
+
+        <h3>Research Interests</h3>
+        <ul>
+          <li>Fair clustering and fair machine learning models.</li>
+          <li>Distance metric learning for heterogeneous data.</li>
+          <li>Variable weighting and feature importance for clustering.</li>
+          <li>Nonparametric statistics</li>
+          <li>Statistical software development in R</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2026 Jesse Ghashti. 
+  </footer>
+
+</body>
+</html>
