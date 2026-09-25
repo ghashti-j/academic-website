@@ -19,17 +19,245 @@
       <a href="../index.html">Home</a>
       <a href="biography.html">Biography</a>
       <a href="publications.html" class="active">Publications</a>
-      <a href="teaching.html" >Teaching</a>
-      <a href="blog.html" >Current Work Blogs</a>
-      <a href="contact.html" >Contact</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="teaching.html">Teaching Resources</a>
+      <a href="blog.html">Research Blog</a>
+      <a href="travel.html">Travel Blog</a>
+      <a href="tutoring.html">Tutoring Services</a>
     </nav>
   </header>
+
   <main class="page-body">
-    <div class="page-container">
+    <section class="publications">
       <h1>Publications</h1>
-      <p class="under-construction">This page is under construction. Check back soon.</p>
-    </div>
+      <p class="page-intro">
+        A record of my published, submitted, and in-progress research, together with
+        the statistical software I have released on CRAN. Click <em>Abstract</em> under
+        any entry to expand it.
+      </p>
+
+      <!-- ============ MANUSCRIPTS ============ -->
+      <div class="pub-section">
+        <h2>Manuscripts</h2>
+
+        <!-- IN PREPARATION -->
+        <h3 class="pub-year">In Preparation</h3>
+
+        <div class="pub-entry">
+          <p class="pub-cite">
+            Ghashti, J. S., and McNicholas, P. D.
+            <span class="pub-title">Variable selection for the clustering and classification of mixed-type data.</span>
+            <span class="pub-status">In preparation</span>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body pending"></div>
+          </details>
+        </div>
+
+        <div class="pub-entry">
+          <p class="pub-cite">
+            Ghashti, J. S., Hare, W., and Thompson, J. R. J.
+            <span class="pub-title">Algorithm-agnostic group-fair clustering via fair interpolated transport.</span>
+            <span class="pub-status">In preparation</span>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body pending"></div>
+          </details>
+        </div>
+
+        <!-- UNDER REVIEW -->
+        <h3 class="pub-year">Under Review</h3>
+
+        <div class="pub-entry">
+          <p class="pub-cite">
+            Ghashti, J. S., Hare, W., and Thompson, J. R. J.
+            <span class="pub-title">Mixed-type fuzzy spectral clustering for wildfire fuel plot typing.</span>
+            <span class="pub-status">Submitted</span>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body pending"></div>
+          </details>
+        </div>
+
+        <div class="pub-entry">
+          <p class="pub-cite">
+            Ghashti, J. S., Andrews, J. L., Thompson, J. R. J., Epp, J., and Kochar, H. S.
+            <span class="pub-title">A bootstrap augmented k-means algorithm for parameter-less fuzzy clustering.</span>
+            <span class="pub-status">Submitted</span>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body pending"></div>
+          </details>
+        </div>
+
+        <div class="pub-entry">
+          <p class="pub-cite">
+            Ghashti, J. S., Hare, W., and Thompson, J. R. J.
+            <span class="pub-title">A generalized variable-weighted adjacency framework for fuzzy spectral clustering.</span>
+            <span class="pub-status">Submitted</span>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body pending"></div>
+          </details>
+        </div>
+
+        <!-- 2025 -->
+        <h3 class="pub-year">2025</h3>
+
+        <div class="pub-entry">
+          <p class="pub-cite">
+            Ghashti, J. S., and Thompson, J. R. J. (2025).
+            <span class="pub-title">Mixed-type kernel-based quantification of similarity for clustering.</span>
+            <span class="pub-venue">Advances in Data Analysis and Classification</span>, 1&ndash;37.
+            <a class="pub-doi" href="https://doi.org/10.1007/s11634-025-00637-6" target="_blank" rel="noopener">https://doi.org/10.1007/s11634-025-00637-6</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              Similarity-based clustering groups observations based on their degree of proximity, which are often calculated using similarity functions. However, existing similarity functions often have limitations in effectively capturing the relationships within mixed numeric and categorical data, called mixed-type data. These functions may oversimplify the degree of proximity for observations in mixed-type datasets, leading to suboptimal clustering outcomes. We propose a flexible similarity learning approach using kernel functions to quantify proximity for each data type and balance between them. Our approach allows for the induction of distance metrics using a similarity function, either through positive definite kernel functions or by defining equivalence classes. We demonstrate that the proposed kernel summation similarity function improves spectral clustering accuracy over existing similarity functions and distance metrics on simulated and real-world mixed-type datasets. We show that this similarity learning approach benefits multivariate data structures by balancing similarities across variables, and remains invariant to data dimensionality and noise on large, imbalanced datasets.
+            </div>
+          </details>
+        </div>
+
+        <div class="pub-entry">
+          <p class="pub-cite">
+            Ghashti, J. S., and Thompson, J. R. J. (2025).
+            <span class="pub-title">Mixed-type distance shrinkage and selection for clustering via kernel metric learning.</span>
+            <span class="pub-venue">Journal of Classification</span>, 42(2), 311&ndash;334.
+            <a class="pub-doi" href="https://doi.org/10.1007/s00357-024-09493-z" target="_blank" rel="noopener">https://doi.org/10.1007/s00357-024-09493-z</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              Distance-based clustering is widely used to group mixed numeric and categorical data (mixed-type data), where a predefined metric is used to quantify dissimilarity or distance between data points for clustering data. However, many existing metrics for mixed-type data convert continuous attributes to categorical attributes, or vice versa, and treat variables collectively as a single type, or calculate a distance between each variable separately and combine them. We propose a flexible kernel metric learning approach that balances numeric and categorical data types while determining which variables are relevant to dissimilarities within a dataset. The distance using kernel product similarity (DKPS) function uses kernel functions to measure similarity, with a maximum similarity cross-validated (MSCV) bandwidth selection technique that automatically scales and selects variables relevant to the underlying dissimilarities between data points. We prove that the DKPS function is a metric and show that the DKPS metric is a shrinkage method between maximum dissimilarity between all data points to uniform dissimilarity across data points. We demonstrate that when using the DKPS metric in various distance-based clustering algorithms, we improve clustering accuracy for simulated and real-world mixed-type datasets. In the context of clustering, we show that the DKPS metric with MSCV bandwidths is able to smooth out irrelevant variables and balance variables important to dissimilarity within mixed-type datasets.
+            </div>
+          </details>
+        </div>
+
+        <!-- 2023 -->
+        <h3 class="pub-year">2023</h3>
+
+        <div class="pub-entry">
+          <p class="pub-cite">
+            Ghashti, J. S., and Thompson, J. R. J. (2023).
+            <span class="pub-title">The complexity of financial wellness: Examining survey patterns via kernel metric learning and clustering of mixed-type data.</span>
+            In <span class="pub-venue">Proceedings of the Fourth ACM International Conference on AI in Finance (ICAIF '23)</span>.
+            <a class="pub-doi" href="https://doi.org/10.1145/3604237.3626849" target="_blank" rel="noopener">https://doi.org/10.1145/3604237.3626849</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              Recent market events and inflation have significantly affected the financial stress facing many individuals, but understanding the main stressors is paramount to supporting them in making better long-term financial decisions. Financial advisors must understand the types of stress their clients face to provide tailored advice. While recent high inflation rates may underpin the cause of their clients’ stress, we ask: what are the major sources of stress that affect an individual’s financial wellness? In this study, we analyze the responses of 1874 individuals to 68 mixed-type questions from 2022 using distance-based clustering that is widely used in finance to group data into similar groups. Distance-based clustering is widely used in finance to group data into similar groups, which requires a predefined distance measurement between data points based on their (dis)similarity. We use a mixed-type metric that utilizes a variable-specific kernel functions with cross-validated bandwidths to optimally balance variables important for similarity, and smooth out variables irrelevant to the difference between data points. Applying the metric to the high-dimensional survey, we found two clusters of respondents: (1) the ‘steady savers’, who represent approximately one third of survey respondents and expressed stronger financial well-being with respect to day-to-day financial obligations and future outlooks, and (2) the ‘financial strivers’ who currently find themselves in more financially stressful situations. This segmentation provides financial advisors with useful results to allocate products, services, or advice tailored to support each group’s unique financial wellness needs. By leveraging this methodology, we strive to advance the realm of personalized financial advising and the landscape of robo-advising. Enhanced precision and tailored strategies allow this work to elevate the quality of investment recommendations, contributing to the future of automated financial guidance.
+            </div>
+          </details>
+        </div>
+
+      </div>
+
+      <!-- ============ SOFTWARE ============ -->
+      <div class="pub-section">
+        <h2>Software</h2>
+
+        <!-- 2026 -->
+        <h3 class="pub-year">2026</h3>
+
+        <div class="pub-entry">
+          <p class="pub-cite">
+            Ghashti, J. S., Hare, W., and Thompson, J. R. J. (2026).
+            <span class="pub-venue">FITclust: Fair interpolated transport for group-fair clustering</span>
+            [R package version 1.0.0].
+            <a class="pub-doi" href="https://doi.org/10.32614/CRAN.package.FITclust" target="_blank" rel="noopener">https://doi.org/10.32614/CRAN.package.FITclust</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              Implementation of Fair Interpolated Transport (FIT), an algorithm-agnostic preprocessing framework for group-fair clustering. Group-conditional empirical distributions are moved along Wasserstein-2 geodesics toward a shared barycenter at a tunable transport intensity, and the smallest intensity meeting a soft-fairness tolerance is selected. Three soft clustering families are provided: centroid based, graph based, and model based.
+            </div>
+          </details>
+        </div>
+
+        <!-- 2025 -->
+        <h3 class="pub-year">2025</h3>
+
+        <div class="pub-entry">
+          <p class="pub-cite">
+            Ghashti, J. S., Andrews, J. L., Thompson, J. R. J., Epp, J., and Kochar, H. S. (2025).
+            <span class="pub-venue">bootkmeans: A bootstrap augmented k-means algorithm for fuzzy partitions</span>
+            [R package version 1.0.0].
+            <a class="pub-doi" href="https://doi.org/10.32614/CRAN.package.bootkmeans" target="_blank" rel="noopener">https://doi.org/10.32614/CRAN.package.bootkmeans</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              Implementation of the bootkmeans algorithm, a bootstrap augmented k-means algorithm that returns probabilistic cluster assignments.
+            </div>
+          </details>
+        </div>
+
+        <div class="pub-entry">
+          <p class="pub-cite">
+            Ghashti, J. S., and Thompson, J. R. J. (2025).
+            <span class="pub-venue">FuzzySpec: Fuzzy spectral clustering with variable-weighted adjacency matrices</span>
+            [R package version 1.0.0].
+            <a class="pub-doi" href="https://doi.org/10.32614/CRAN.package.FuzzySpec" target="_blank" rel="noopener">https://doi.org/10.32614/CRAN.package.FuzzySpec</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              Implementation of the FVIBES (Fuzzy Variable-Importance Based Eigenspace Separation) algorithm for fuzzy spectral clustering with variable-weighted adjacency matrices.
+            </div>
+          </details>
+        </div>
+
+        <div class="pub-entry">
+          <p class="pub-cite">
+            Thompson, J. R. J., and Ghashti, J. S. (2025).
+            <span class="pub-venue">kdml: Kernel distance metric learning for mixed-type data</span>
+            [R package version 1.1.1].
+            <a class="pub-doi" href="https://doi.org/10.32614/CRAN.package.kdml" target="_blank" rel="noopener">https://doi.org/10.32614/CRAN.package.kdml</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              Distance metrics for mixed-type data consisting of continuous, nominal, and ordinal variables. This methodology uses additive and product kernels to calculate similarity functions and metrics, and selects variables relevant to the underlying distance through bandwidth selection via maximum similarity cross-validation. The package can be applied to distance-based algorithms including clustering analysis.
+            </div>
+          </details>
+        </div>
+
+      </div>
+
+      <!-- ============ THESES ============ -->
+      <div class="pub-section">
+        <h2>Theses</h2>
+
+        <!-- 2024 -->
+        <h3 class="pub-year">2024</h3>
+
+        <div class="pub-entry">
+          <p class="pub-cite">
+            Ghashti, J. S. (2024).
+            <span class="pub-title">Similarity maximization and shrinkage approach in kernel metric learning for clustering mixed-type data.</span>
+            [Master&rsquo;s thesis, University of British Columbia].
+            <a class="pub-doi" href="https://doi.org/10.14288/1.0443975" target="_blank" rel="noopener">https://doi.org/10.14288/1.0443975</a>
+          </p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              This thesis introduces a new kernel-based shrinkage approach to distance metric learning for mixed-type datasets--a mix of continuous, nominal, and ordinal variables. Mixed-type data is common across many research fields and domains, and is used extensively in machine learning tasks that require a comparison between data points such as distance metrics in clustering and classification. However, traditional methods for handling mixed-type data often rely on distance metrics that inadequately measure and weigh different variables types, and therefore fail to capture the complex nature of the data. This can lead to a loss in accuracy and precision in clustering and classification tasks and inevitably yield suboptimal outcomes. To improve metric calculations, a distance metric learning approach is proposed, utilizing kernel functions as similarity, with a new optimal bandwidth selection methodology called Maximum Similarity Cross-Validation (MSCV). We demonstrate that MSCV smooths out irrelevant variables and emphasizes variables relevant for calculating distance within mixed-type datasets. Additionally, the kernel distance is positioned as a shrinkage methodology that balances the similarity calculation between maximum and uniform similarity. Further, this approach makes no assumptions on the shape of the metric, mitigating user-specification bias. Analysis of simulated data demonstrates that the kernel metric adequately captures intricate and complex data relationships where other methodologies are limited, including scenarios where variables are irrelevant for distinguishing meaningful groupings within the data. It is shown that as the number of observations increases, the precision of the kernel metric stabilizes, as do the kernel bandwidths. Additionally, applications to real data confirm the metric's advantage of adequately improving accuracy across various data structures. The proposed metric consistently outperforms competing distance metrics in various clustering methodologies, showing that this flexible kernel metric provides a new and effective alternative for similarity-based learning algorithms.
+            </div>
+          </details>
+        </div>
+
+      </div>
+
+    </section>
   </main>
+
   <footer class="site-footer">
     &copy; 2026 Jesse Ghashti.
   </footer>
